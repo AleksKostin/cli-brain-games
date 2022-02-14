@@ -4,8 +4,10 @@
 name: Node.js CI
 
 on:
-  push:
-    branches: [ main ]
+  - push
+  
+env:
+  CI: true
 
 jobs:
   build:
@@ -24,4 +26,5 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: true
+    - run: make install
     - run: make lint
