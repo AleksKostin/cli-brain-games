@@ -6,3 +6,6 @@
 
 ### Linter
 ![Linter](https://github.com/AleksKostin/frontend-project-lvl1/actions/workflows/nodejs.yml/badge.svg)
+
+### Asciinema
+https://asciinema.org/a/FFmpIYAB6BYm6PEpuwuXdDHs0
