@@ -23,6 +23,11 @@ const gameQuestion = (value) => {
   return query;
 };
 
+const randomMinToMax = (min, max) => {
+  const random = Math.floor(Math.random() * (max - min) + min);
+  return random;
+};
+
 export {
-  randomElement, greeting, wrongAnswer, gameQuestion,
+  randomElement, greeting, wrongAnswer, gameQuestion, randomMinToMax,
 };
