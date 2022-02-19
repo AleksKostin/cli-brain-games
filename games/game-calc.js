@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 import {
   randomElement, greeting, wrongAnswer, gameQuestion,
 } from '../src/index.js';
