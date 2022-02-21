@@ -8,10 +8,12 @@
 ![Linter](https://github.com/AleksKostin/frontend-project-lvl1/actions/workflows/nodejs.yml/badge.svg)
 
 ### Asciinema
- *brain-even:* https://asciinema.org/a/SawpBH396iQkP2GFsp5SerYJJ  
+ *brain-even:* https://asciinema.org/a/cDEY4fy46Z3PccBBEiTsJ3tCe  
 
- *brain-calc:* https://asciinema.org/a/XW82843qxUeeYLwbIU3IMDf1b  
+ *brain-calc:* https://asciinema.org/a/zIj23XpHEBybk9NySnXLbfasi  
 
- *brain-gcd:* https://asciinema.org/a/ICWP81KGSJ0tneK1g43eAj8yb  
+ *brain-gcd:* https://asciinema.org/a/IrBrrOWrHhLdeYPniLsM9HAy4  
 
  *brain-progression:* https://asciinema.org/a/S5xwejwMHxKge05CQikdz8Lqs  
+
+ *brain-prime:* https://asciinema.org/a/ZdaYzoBQ3ntEN84NWOuPNK56x  
