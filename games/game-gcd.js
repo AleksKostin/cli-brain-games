@@ -7,9 +7,9 @@ const brainGcd = () => {
   console.log('Find the greatest common divisor of given numbers.');
   let i = 0;
   let answer;
+  let num1;
+  let num2;
   while (i < 3) {
-    let num1;
-    let num2;
     const numbers = `${num1 = randomMinToMax(2, 101)} ${num2 = randomMinToMax(2, 101)}`;
     const query = gameQuestion(numbers);
     const tmp = num1 <= num2 ? num2 : num1;

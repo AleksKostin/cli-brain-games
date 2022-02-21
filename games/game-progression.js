@@ -5,7 +5,6 @@ import {
 const brainProgression = () => {
   const userName = greeting();
   console.log('What number is missing in the progression?');
-  let answer;
   let i = 0;
   while (i < 3) {
     const array = [];
@@ -15,7 +14,7 @@ const brainProgression = () => {
       array.push(j);
     }
     const randomElementOfArr = randomElement(array.length);
-    answer = array[randomElementOfArr];
+    const answer = array[randomElementOfArr];
     array.splice(randomElementOfArr, 1, '..');
     const query = gameQuestion(array);
     if (query === String(answer)) {

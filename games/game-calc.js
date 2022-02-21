@@ -7,14 +7,12 @@ const brainCalc = () => {
   console.log('What is the result of the expression?');
   const operator = ['+', '-', '*'];
   let i = 0;
-  let randomOperator;
-  let expression;
   let answer;
   let num1;
   let num2;
   while (i < 3) {
-    randomOperator = operator[randomElement(operator.length)];
-    expression = `${num1 = randomElement(10)} ${randomOperator} ${num2 = randomElement(10)}`;
+    const randomOperator = operator[randomElement(operator.length)];
+    const expression = `${num1 = randomElement(10)} ${randomOperator} ${num2 = randomElement(10)}`;
     const query = gameQuestion(expression);
     switch (randomOperator) {
       case '+':
