@@ -10,7 +10,7 @@ const brainProgression = () => {
     const array = [];
     const firstElement = randomMinToMax(1, 20);
     const randomStep = randomMinToMax(2, 20);
-    for (let j = firstElement; array.length <= 10; j += randomStep) {
+    for (let j = firstElement; array.length < 10; j += randomStep) {
       array.push(j);
     }
     const randomElementOfArr = randomElement(array.length);
