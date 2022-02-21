@@ -7,9 +7,14 @@ const brainPrime = () => {
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
   let i = 0;
   while (i < 3) {
+    let answer = 'yes';
     const randomNum = randomMinToMax(2, 100);
     const query = gameQuestion(randomNum);
-    const answer = randomNum % 2 !== 0 || randomNum === 2 ? 'yes' : 'no';
+    for (let j = 2; j < randomNum; j += 1) {
+      if (randomNum % j === 0 && randomNum !== 0) {
+        answer = 'no';
+      }
+    }
     if (query === answer) {
       console.log('Correct!');
       i += 1;
