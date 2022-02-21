@@ -16,7 +16,8 @@ const brainProgression = () => {
     const randomElementOfArr = randomElement(array.length);
     const answer = array[randomElementOfArr];
     array.splice(randomElementOfArr, 1, '..');
-    const query = gameQuestion(array);
+    const str = array.join(' ');
+    const query = gameQuestion(str);
     if (query === String(answer)) {
       console.log('Correct!');
       i += 1;
