@@ -8,19 +8,19 @@ brain-{game_name}
 # Instruction
 ***
 
-####*brain-even:*
+#### *brain-even:*
 <a href="https://asciinema.org/a/SawpBH396iQkP2GFsp5SerYJJ" target="_blank"><img src="https://asciinema.org/a/SawpBH396iQkP2GFsp5SerYJJ.svg" width="240" height="180" border="10" /></a>
 
 #### *brain-calc:* 
 <a href="https://asciinema.org/a/XW82843qxUeeYLwbIU3IMDf1b" target="_blank"><img src="https://asciinema.org/a/XW82843qxUeeYLwbIU3IMDf1b.svg" width="240" height="180" border="10"/></a>
 
- ####*brain-gcd:*
+ #### *brain-gcd:*
 <a href="https://asciinema.org/a/ICWP81KGSJ0tneK1g43eAj8yb" target="_blank"><img src="https://asciinema.org/a/ICWP81KGSJ0tneK1g43eAj8yb.svg" width="240" height="180" border="10" /></a>
 
 #### *brain-progression:* 
 <a href="https://asciinema.org/a/S5xwejwMHxKge05CQikdz8Lqs" target="_blank"><img src="https://asciinema.org/a/S5xwejwMHxKge05CQikdz8Lqs.svg" width="240" height="180" border="10"  /></a>
 
-####*brain-prime:* 
+#### *brain-prime:* 
 <a href="https://asciinema.org/a/ZdaYzoBQ3ntEN84NWOuPNK56x" target="_blank"><img src="https://asciinema.org/a/ZdaYzoBQ3ntEN84NWOuPNK56x.svg" width="240" height="180" border="10"/></a>
 
 ### Hexlet tests and linter status:
