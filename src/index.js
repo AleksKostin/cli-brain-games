@@ -1,11 +1,5 @@
 import readlineSync from 'readline-sync';
 
-const randomElement = (element) => {
-  const tmp = element;
-  const random = Math.floor(Math.random() * tmp);
-  return random;
-};
-
 const greeting = () => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
@@ -23,11 +17,19 @@ const gameQuestion = (value) => {
   return query;
 };
 
-const randomMinToMax = (min, max) => {
-  const random = Math.floor(Math.random() * (max - min) + min);
-  return random;
+const engineGame = (query, answer, userName, functionGame, i) => {
+  if (i < 3) {
+    if (query === String(answer)) {
+      console.log('Correct!');
+      return functionGame(i + 1);
+    }
+    return wrongAnswer(query, answer, userName);
+  } if (query !== String(answer)) {
+    return wrongAnswer(query, answer, userName);
+  }
+  return console.log(`Congratulations, ${userName}!`);
 };
 
 export {
-  randomElement, greeting, wrongAnswer, gameQuestion, randomMinToMax,
+  greeting, wrongAnswer, gameQuestion, engineGame,
 };
