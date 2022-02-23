@@ -1,3 +1,28 @@
+## Setup
+
+make install
+
+## Run
+
+brain-{game_name}
+# Instruction
+***
+
+####*brain-even:*
+<a href="https://asciinema.org/a/SawpBH396iQkP2GFsp5SerYJJ" target="_blank"><img src="https://asciinema.org/a/SawpBH396iQkP2GFsp5SerYJJ.svg" width="240" height="180" border="10" /></a>
+
+#### *brain-calc:* 
+<a href="https://asciinema.org/a/XW82843qxUeeYLwbIU3IMDf1b" target="_blank"><img src="https://asciinema.org/a/XW82843qxUeeYLwbIU3IMDf1b.svg" width="240" height="180" border="10"/></a>
+
+ ####*brain-gcd:*
+<a href="https://asciinema.org/a/ICWP81KGSJ0tneK1g43eAj8yb" target="_blank"><img src="https://asciinema.org/a/ICWP81KGSJ0tneK1g43eAj8yb.svg" width="240" height="180" border="10" /></a>
+
+#### *brain-progression:* 
+<a href="https://asciinema.org/a/S5xwejwMHxKge05CQikdz8Lqs" target="_blank"><img src="https://asciinema.org/a/S5xwejwMHxKge05CQikdz8Lqs.svg" width="240" height="180" border="10"  /></a>
+
+####*brain-prime:* 
+<a href="https://asciinema.org/a/ZdaYzoBQ3ntEN84NWOuPNK56x" target="_blank"><img src="https://asciinema.org/a/ZdaYzoBQ3ntEN84NWOuPNK56x.svg" width="240" height="180" border="10"/></a>
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/AleksKostin/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/AleksKostin/frontend-project-lvl1/actions)
 
@@ -6,14 +31,3 @@
 
 ### Linter
 ![Linter](https://github.com/AleksKostin/frontend-project-lvl1/actions/workflows/nodejs.yml/badge.svg)
-
-### Asciinema
- *brain-even:* https://asciinema.org/a/cDEY4fy46Z3PccBBEiTsJ3tCe  
-
- *brain-calc:* https://asciinema.org/a/zIj23XpHEBybk9NySnXLbfasi  
-
- *brain-gcd:* https://asciinema.org/a/IrBrrOWrHhLdeYPniLsM9HAy4  
-
- *brain-progression:* https://asciinema.org/a/S5xwejwMHxKge05CQikdz8Lqs  
-
- *brain-prime:* https://asciinema.org/a/ZdaYzoBQ3ntEN84NWOuPNK56x  
