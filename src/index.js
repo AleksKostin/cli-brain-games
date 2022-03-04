@@ -17,15 +17,18 @@ const gameQuestion = (value) => {
   return query;
 };
 
-const engineGame = (query, answer, userName, functionGame, i) => {
-  if (i < 3) {
+const engineGame = (functionGame, task) => {
+  const userName = greeting();
+  console.log(task);
+  let i = 0;
+  while (i < 3) {
+    const [query, answer] = functionGame();
     if (query === String(answer)) {
       console.log('Correct!');
-      return functionGame(i + 1);
+      i += 1;
+    } else {
+      return wrongAnswer(query, answer, userName);
     }
-    return wrongAnswer(query, answer, userName);
-  } if (query !== String(answer)) {
-    return wrongAnswer(query, answer, userName);
   }
   return console.log(`Congratulations, ${userName}!`);
 };
