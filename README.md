@@ -9,19 +9,19 @@ brain-{game_name}
 ***
 
 #### *brain-even:*
-<a href="https://asciinema.org/a/SawpBH396iQkP2GFsp5SerYJJ" target="_blank"><img src="https://asciinema.org/a/SawpBH396iQkP2GFsp5SerYJJ.svg" width="240" height="180" border="10" /></a>
+<a href="https://asciinema.org/a/ziznSdV6kBBYY0NrDrQex1Okh" target="_blank"><img src="https://asciinema.org/a/ziznSdV6kBBYY0NrDrQex1Okh.svg" width="240" height="180" border="10" /></a>
 
 #### *brain-calc:* 
-<a href="https://asciinema.org/a/XW82843qxUeeYLwbIU3IMDf1b" target="_blank"><img src="https://asciinema.org/a/XW82843qxUeeYLwbIU3IMDf1b.svg" width="240" height="180" border="10"/></a>
+<a href="https://asciinema.org/a/AluTz73mpP4nkvn995L2iCUj9" target="_blank"><img src="https://asciinema.org/a/AluTz73mpP4nkvn995L2iCUj9.svg" width="240" height="180" border="10"/></a>
 
  #### *brain-gcd:*
-<a href="https://asciinema.org/a/ICWP81KGSJ0tneK1g43eAj8yb" target="_blank"><img src="https://asciinema.org/a/ICWP81KGSJ0tneK1g43eAj8yb.svg" width="240" height="180" border="10" /></a>
+<a href="https://asciinema.org/a/QLYRnuL8MQrTOpn3weVikwo5N" target="_blank"><img src="https://asciinema.org/a/QLYRnuL8MQrTOpn3weVikwo5N.svg" width="240" height="180" border="10" /></a>
 
 #### *brain-progression:* 
-<a href="https://asciinema.org/a/S5xwejwMHxKge05CQikdz8Lqs" target="_blank"><img src="https://asciinema.org/a/S5xwejwMHxKge05CQikdz8Lqs.svg" width="240" height="180" border="10"  /></a>
+<a href="https://asciinema.org/a/6vdRUoXtAL7S3BZvgHreCRVbn" target="_blank"><img src="https://asciinema.org/a/6vdRUoXtAL7S3BZvgHreCRVbn.svg" width="240" height="180" border="10"  /></a>
 
 #### *brain-prime:* 
-<a href="https://asciinema.org/a/ZdaYzoBQ3ntEN84NWOuPNK56x" target="_blank"><img src="https://asciinema.org/a/ZdaYzoBQ3ntEN84NWOuPNK56x.svg" width="240" height="180" border="10"/></a>
+<a href="https://asciinema.org/a/bkcQM58R3K7SC2k9FLfB1xjS8" target="_blank"><img src="https://asciinema.org/a/bkcQM58R3K7SC2k9FLfB1xjS8.svg" width="240" height="180" border="10"/></a>
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/AleksKostin/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/AleksKostin/frontend-project-lvl1/actions)
