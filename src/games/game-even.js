@@ -1,19 +1,19 @@
 import {
-  engineGame, gameQuestion,
+  isEngineGame, getGameQuestion,
 } from '../index.js';
 
-import randomNumb from '../utils.js';
+import getRandomNumb from '../utils.js';
 
-const engineEven = () => {
-  const randomNum = randomNumb(100);
-  const query = gameQuestion(randomNum);
+const isEngineEven = () => {
+  const randomNum = getRandomNumb(100);
+  const query = getGameQuestion(randomNum);
   const answer = randomNum % 2 === 0 ? 'yes' : 'no';
   return [query, answer];
 };
 
-const brainEven = () => {
+const getBrainEven = () => {
   const task = 'Answer "yes" if the number is even, otherwise answer "no".';
-  return engineGame(engineEven, task);
+  return isEngineGame(isEngineEven, task);
 };
 
-export default brainEven;
+export default getBrainEven;

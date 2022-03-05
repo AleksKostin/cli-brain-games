@@ -1,27 +1,27 @@
 import {
-  gameQuestion, engineGame,
+  getGameQuestion, isEngineGame,
 } from '../index.js';
 
-import randomNumb from '../utils.js';
+import getRandomNumb from '../utils.js';
 
-const engineProgression = () => {
+const isEngineProgression = () => {
   const array = [];
-  const firstElement = randomNumb(1, 20);
-  const randomStep = randomNumb(2, 20);
+  const firstElement = getRandomNumb(1, 20);
+  const randomStep = getRandomNumb(2, 20);
   for (let j = firstElement; array.length < 10; j += randomStep) {
     array.push(j);
   }
-  const randomElementOfArr = randomNumb(array.length);
+  const randomElementOfArr = getRandomNumb(array.length);
   const answer = array[randomElementOfArr];
   array.splice(randomElementOfArr, 1, '..');
   const str = array.join(' ');
-  const query = gameQuestion(str);
+  const query = getGameQuestion(str);
   return [query, answer];
 };
 
-const brainProgression = () => {
+const getBrainProgression = () => {
   const task = 'What number is missing in the progression?';
-  return engineGame(engineProgression, task);
+  return isEngineGame(isEngineProgression, task);
 };
 
-export default brainProgression;
+export default getBrainProgression;

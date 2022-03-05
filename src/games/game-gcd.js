@@ -1,15 +1,15 @@
 import {
-  engineGame, gameQuestion,
+  isEngineGame, getGameQuestion,
 } from '../index.js';
 
-import randomNumb from '../utils.js';
+import getRandomNumb from '../utils.js';
 
-const engineGcd = () => {
+const isEngineGcd = () => {
   let answer;
   let num1;
   let num2;
-  const numbers = `${num1 = randomNumb(2, 101)} ${num2 = randomNumb(2, 101)}`;
-  const query = gameQuestion(numbers);
+  const numbers = `${num1 = getRandomNumb(2, 101)} ${num2 = getRandomNumb(2, 101)}`;
+  const query = getGameQuestion(numbers);
   const tmp = num1 <= num2 ? num2 : num1;
   for (let j = 1; j <= tmp; j += 1) {
     if (num1 % j === 0 && num2 % j === 0) {
@@ -19,9 +19,9 @@ const engineGcd = () => {
   return [query, answer];
 };
 
-const brainGcd = () => {
+const getBrainGcd = () => {
   const task = 'Find the greatest common divisor of given numbers.';
-  return engineGame(engineGcd, task);
+  return isEngineGame(isEngineGcd, task);
 };
 
-export default brainGcd;
+export default getBrainGcd;

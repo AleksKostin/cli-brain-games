@@ -1,13 +1,13 @@
 import {
-  engineGame, gameQuestion,
+  isEngineGame, getGameQuestion,
 } from '../index.js';
 
-import randomNumb from '../utils.js';
+import getRandomNumb from '../utils.js';
 
-const enginePrime = () => {
+const isEnginePrime = () => {
   let answer = 'yes';
-  const randomNum = randomNumb(2, 100);
-  const query = gameQuestion(randomNum);
+  const randomNum = getRandomNumb(2, 100);
+  const query = getGameQuestion(randomNum);
   for (let j = 2; j < randomNum; j += 1) {
     if (randomNum % j === 0 && randomNum !== 0) {
       answer = 'no';
@@ -16,9 +16,9 @@ const enginePrime = () => {
   return [query, answer];
 };
 
-const brainPrime = () => {
+const getBrainPrime = () => {
   const task = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-  return engineGame(enginePrime, task);
+  return isEngineGame(isEnginePrime, task);
 };
 
-export default brainPrime;
+export default getBrainPrime;
