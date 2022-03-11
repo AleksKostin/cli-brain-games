@@ -1,27 +1,32 @@
 import {
-  getGameQuestion, isEngineGame,
+  getGameQuestion, run,
 } from '../index.js';
 
 import getRandomNumb from '../utils.js';
 
-const isEngineProgression = () => {
-  const array = [];
+const getProgression = (first, step) => {
+  const result = [];
+  for (let j = first; result.length < 10; j += step) {
+    result.push(j);
+  }
+  return result;
+};
+
+const engineProgression = () => {
   const firstElement = getRandomNumb(1, 20);
   const randomStep = getRandomNumb(2, 20);
-  for (let j = firstElement; array.length < 10; j += randomStep) {
-    array.push(j);
-  }
-  const randomElementOfArr = getRandomNumb(array.length);
-  const answer = array[randomElementOfArr];
-  array.splice(randomElementOfArr, 1, '..');
-  const str = array.join(' ');
-  const query = getGameQuestion(str);
+  const progression = getProgression(firstElement, randomStep);
+  const randomElement = getRandomNumb(progression.length);
+  const answer = progression[randomElement];
+  progression.splice(randomElement, 1, '..');
+  const str = progression.join(' ');
+  const query = getGameQuestion(`Question: ${str}\nYour answer: `);
   return [query, answer];
 };
 
-const getBrainProgression = () => {
+const brainProgression = () => {
   const task = 'What number is missing in the progression?';
-  return isEngineGame(isEngineProgression, task);
+  return run(engineProgression, task);
 };
 
-export default getBrainProgression;
+export default brainProgression;

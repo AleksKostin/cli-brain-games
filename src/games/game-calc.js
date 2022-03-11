@@ -1,34 +1,39 @@
 import {
-  isEngineGame, getGameQuestion,
+  run, getGameQuestion,
 } from '../index.js';
 
 import getRandomNumb from '../utils.js';
 
-const isEngineCalc = () => {
-  const operator = ['+', '-', '*'];
-  let answer;
-  let num1;
-  let num2;
-  const randomOperator = operator[getRandomNumb(operator.length)];
-  const expression = `${num1 = getRandomNumb(10)} ${randomOperator} ${num2 = getRandomNumb(10)}`;
-  const query = getGameQuestion(expression);
-  switch (randomOperator) {
+const calculation = (num1, num2, operator) => {
+  let result;
+  switch (operator) {
     case '+':
-      answer = num1 + num2;
+      result = num1 + num2;
       break;
     case '-':
-      answer = num1 - num2;
+      result = num1 - num2;
       break;
     default:
-      answer = num1 * num2;
+      result = num1 * num2;
       break;
   }
+  return result;
+};
+
+const engineCalc = () => {
+  const operator = ['+', '-', '*'];
+  const num1 = getRandomNumb(10);
+  const num2 = getRandomNumb(10);
+  const randomOperator = operator[getRandomNumb(operator.length)];
+  const expression = `${num1} ${randomOperator} ${num2}`;
+  const query = getGameQuestion(`Question: ${expression}\nYour answer: `);
+  const answer = calculation(num1, num2, randomOperator);
   return [query, answer];
 };
 
-const getBrainCalc = () => {
+const brainCalc = () => {
   const task = 'What is the result of the expression?';
-  return isEngineGame(isEngineCalc, task);
+  return run(engineCalc, task);
 };
 
-export default getBrainCalc;
+export default brainCalc;

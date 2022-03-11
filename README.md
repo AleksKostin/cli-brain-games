@@ -1,10 +1,19 @@
+#### <font size = 4 color = # 1E90FF> *This is my first educational project, consisting of five logic games:*</font> 
+<font size = 4 color = # 1E90FF> • *brain-calc* –– expression calculation </font>
+<font size = 4 color = # 1E90FF> • *brain-even* –– even number </font>
+<font size = 4 color = # 1E90FF> • *brain-gcd* –– greatest common divisor </font>
+<font size = 4 color = # 1E90FF> • *brain-prime* –– prime number </font>
+<font size = 4 color = # 1E90FF> • *brain-progression* –– numerical progression </font>
+
 ## Setup
-
+Required Node.js v17+
+``` sh
 make install
-
+```
 ## Run
-
+``` sh
 brain-{game_name}
+```
 # Instruction
 ***
 
