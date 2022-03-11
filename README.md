@@ -1,42 +1,28 @@
-#### <font size = 4 color = # 1E90FF> *This is my first educational project, consisting of five logic games:*</font> 
-<font size = 4 color = # 1E90FF> • *brain-calc* –– expression calculation </font>
-<font size = 4 color = # 1E90FF> • *brain-even* –– even number </font>
-<font size = 4 color = # 1E90FF> • *brain-gcd* –– greatest common divisor </font>
-<font size = 4 color = # 1E90FF> • *brain-prime* –– prime number </font>
-<font size = 4 color = # 1E90FF> • *brain-progression* –– numerical progression </font>
+[![Actions Status](https://github.com/AleksKostin/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/AleksKostin/frontend-project-lvl1/actions)
 
-## Setup
+[![Maintainability](https://api.codeclimate.com/v1/badges/149b5d4b0be53f0ddce3/maintainability)](https://codeclimate.com/github/AleksKostin/frontend-project-lvl1/maintainability)
+
+![Linter](https://github.com/AleksKostin/frontend-project-lvl1/actions/workflows/nodejs.yml/badge.svg)
+
+##### *This is my first educational project, consisting of five logic games:*
+ 
+- *[brain-calc]* – expression calculation
+- *[brain-even]* – even number 
+- *[brain-gcd]* – greatest common divisor 
+- *[brain-prime]* – prime number 
+- *[brain-progression]* – numerical progression
+
+### Install
 Required Node.js v17+
 ``` sh
 make install
 ```
-## Run
+### Run
 ``` sh
 brain-{game_name}
 ```
-# Instruction
-***
-
-#### *brain-even:*
-<a href="https://asciinema.org/a/ziznSdV6kBBYY0NrDrQex1Okh" target="_blank"><img src="https://asciinema.org/a/ziznSdV6kBBYY0NrDrQex1Okh.svg" width="240" height="180" border="10" /></a>
-
-#### *brain-calc:* 
-<a href="https://asciinema.org/a/AluTz73mpP4nkvn995L2iCUj9" target="_blank"><img src="https://asciinema.org/a/AluTz73mpP4nkvn995L2iCUj9.svg" width="240" height="180" border="10"/></a>
-
- #### *brain-gcd:*
-<a href="https://asciinema.org/a/QLYRnuL8MQrTOpn3weVikwo5N" target="_blank"><img src="https://asciinema.org/a/QLYRnuL8MQrTOpn3weVikwo5N.svg" width="240" height="180" border="10" /></a>
-
-#### *brain-progression:* 
-<a href="https://asciinema.org/a/6vdRUoXtAL7S3BZvgHreCRVbn" target="_blank"><img src="https://asciinema.org/a/6vdRUoXtAL7S3BZvgHreCRVbn.svg" width="240" height="180" border="10"  /></a>
-
-#### *brain-prime:* 
-<a href="https://asciinema.org/a/bkcQM58R3K7SC2k9FLfB1xjS8" target="_blank"><img src="https://asciinema.org/a/bkcQM58R3K7SC2k9FLfB1xjS8.svg" width="240" height="180" border="10"/></a>
-
-### Hexlet tests and linter status:
-[![Actions Status](https://github.com/AleksKostin/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/AleksKostin/frontend-project-lvl1/actions)
-
-### CodeClimate
-<a href="https://codeclimate.com/github/AleksKostin/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/149b5d4b0be53f0ddce3/maintainability" /></a>
-
-### Linter
-![Linter](https://github.com/AleksKostin/frontend-project-lvl1/actions/workflows/nodejs.yml/badge.svg)
+[brain-calc]: <https://asciinema.org/a/AluTz73mpP4nkvn995L2iCUj9>
+[brain-even]: <https://asciinema.org/a/ziznSdV6kBBYY0NrDrQex1Okh>
+[brain-gcd]: <https://asciinema.org/a/QLYRnuL8MQrTOpn3weVikwo5N>
+[brain-prime]: <https://asciinema.org/a/bkcQM58R3K7SC2k9FLfB1xjS8>
+[brain-progression]: <https://asciinema.org/a/6vdRUoXtAL7S3BZvgHreCRVbn>
