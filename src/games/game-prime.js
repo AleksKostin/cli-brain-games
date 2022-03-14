@@ -1,6 +1,4 @@
-import {
-  run, getGameQuestion,
-} from '../index.js';
+import run from '../index.js';
 
 import getRandomNumb from '../utils.js';
 
@@ -15,7 +13,7 @@ const isNumbPrime = (num) => {
 
 const enginePrime = () => {
   const randomNum = getRandomNumb(2, 100);
-  const query = getGameQuestion(`Question: ${randomNum}\nYour answer: `);
+  const query = `${randomNum}`;
   const answer = isNumbPrime(randomNum) ? 'yes' : 'no';
   return [query, answer];
 };

@@ -1,6 +1,4 @@
-import {
-  run, getGameQuestion,
-} from '../index.js';
+import run from '../index.js';
 
 import getRandomNumb from '../utils.js';
 
@@ -13,8 +11,10 @@ const calculation = (num1, num2, operator) => {
     case '-':
       result = num1 - num2;
       break;
-    default:
+    case '*':
       result = num1 * num2;
+      break;
+    default:
       break;
   }
   return result;
@@ -26,7 +26,7 @@ const engineCalc = () => {
   const num2 = getRandomNumb(10);
   const randomOperator = operator[getRandomNumb(operator.length)];
   const expression = `${num1} ${randomOperator} ${num2}`;
-  const query = getGameQuestion(`Question: ${expression}\nYour answer: `);
+  const query = `${expression}`;
   const answer = calculation(num1, num2, randomOperator);
   return [query, answer];
 };

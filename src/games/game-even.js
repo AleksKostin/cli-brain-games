@@ -1,12 +1,10 @@
-import {
-  run, getGameQuestion,
-} from '../index.js';
+import run from '../index.js';
 
 import getRandomNumb from '../utils.js';
 
 const engineEven = () => {
   const randomNum = getRandomNumb(100);
-  const query = getGameQuestion(`Question: ${randomNum}\nYour answer: `);
+  const query = `${randomNum}`;
   const answer = randomNum % 2 === 0 ? 'yes' : 'no';
   return [query, answer];
 };

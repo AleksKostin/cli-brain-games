@@ -1,6 +1,4 @@
-import {
-  getGameQuestion, run,
-} from '../index.js';
+import run from '../index.js';
 
 import getRandomNumb from '../utils.js';
 
@@ -20,7 +18,7 @@ const engineProgression = () => {
   const answer = progression[randomElement];
   progression.splice(randomElement, 1, '..');
   const str = progression.join(' ');
-  const query = getGameQuestion(`Question: ${str}\nYour answer: `);
+  const query = `${str}`;
   return [query, answer];
 };
 

@@ -1,6 +1,4 @@
-import {
-  run, getGameQuestion,
-} from '../index.js';
+import run from '../index.js';
 
 import getRandomNumb from '../utils.js';
 
@@ -18,7 +16,7 @@ const getGcd = (num1, num2) => {
 const engineGcd = () => {
   const num1 = getRandomNumb(2, 101);
   const num2 = getRandomNumb(2, 101);
-  const query = getGameQuestion(`Question: ${num1} ${num2}\nYour answer: `);
+  const query = `${num1} ${num2}`;
   const answer = getGcd(num1, num2);
   return [query, answer];
 };
