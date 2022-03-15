@@ -27,7 +27,7 @@ const engineCalc = () => {
   const randomOperator = operator[getRandomNumb(operator.length)];
   const expression = `${num1} ${randomOperator} ${num2}`;
   const query = `${expression}`;
-  const answer = calculation(num1, num2, randomOperator);
+  const answer = String(calculation(num1, num2, randomOperator));
   return [query, answer];
 };
 

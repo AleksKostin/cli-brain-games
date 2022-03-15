@@ -17,7 +17,7 @@ const engineGcd = () => {
   const num1 = getRandomNumb(2, 101);
   const num2 = getRandomNumb(2, 101);
   const query = `${num1} ${num2}`;
-  const answer = getGcd(num1, num2);
+  const answer = String(getGcd(num1, num2));
   return [query, answer];
 };
 

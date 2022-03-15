@@ -15,7 +15,7 @@ const engineProgression = () => {
   const randomStep = getRandomNumb(2, 20);
   const progression = getProgression(firstElement, randomStep);
   const randomElement = getRandomNumb(progression.length);
-  const answer = progression[randomElement];
+  const answer = String(progression[randomElement]);
   progression.splice(randomElement, 1, '..');
   const str = progression.join(' ');
   const query = `${str}`;
